@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+    <bean id="springHelloWorld"
+        class="org.SpLFirst.ServiceImp.SpringHWorld"></bean>
+    <bean id="strutsHelloWorld"
+        class="org.SpLFirst.ServiceImp.StrutsHWorld">
+        <property name="membera" value = "dsa"></property>
+        </bean>
+  
+    <bean id="helloWorldService"
+        class="org.SpLFirst.ServiceImp.HWServiceImp">
+        <property name="hw" ref="springHelloWorld"/>
+    </bean>
+  
+</beans>
