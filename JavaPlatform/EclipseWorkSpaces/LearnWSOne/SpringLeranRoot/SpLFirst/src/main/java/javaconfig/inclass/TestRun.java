@@ -13,9 +13,7 @@ public class TestRun {
 		ClassP p2 =  (ClassP) context.getBean("sub2");
 		
 		System.out.println(p1.SayHello("sub") + "------------");
-		System.out.println(p2.SayHello("sub2") + "------------");
-		
-		
+		System.out.println(p2.SayHello("sub2") + "------------");		
 	}
 
 }
