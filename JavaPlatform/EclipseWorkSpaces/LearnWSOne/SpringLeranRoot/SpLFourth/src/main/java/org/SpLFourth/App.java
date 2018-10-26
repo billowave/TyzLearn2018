@@ -23,10 +23,15 @@ public class App
     	    	Stock stock = new Stock();
     	    	stock.setStockCode("7668");
     	    	stock.setStockName("HAIO");
-    	    	//stockBo.save(stock);
+    	    	stockBo.save(stock);
     	    	
     	    	/** select **/
     	    	Stock stock2 = stockBo.findByStockCode("7668");
+    	    	
+    	    	if(stock2 == null)
+    	    	{
+    	    		return;
+    	    	}
     	    	System.out.println(stock2);
     	    	
     	    	/** update **/

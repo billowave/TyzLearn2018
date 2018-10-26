@@ -26,7 +26,8 @@ public class StockDaoImp extends HibernateDaoSupport implements StockDao {
 
 	public Stock findByStockCode(String stockCode) {
 		List list = getHibernateTemplate().find("from Stock where stockCode=?", stockCode);
-		return (Stock) list.get(0);
+		
+		return list.size() >= 1 ? (Stock) list.get(0):null;
 	}
 
 }
