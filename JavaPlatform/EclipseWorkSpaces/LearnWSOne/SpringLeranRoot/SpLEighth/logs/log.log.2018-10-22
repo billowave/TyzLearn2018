@@ -1,0 +1,313 @@
+2018-10-22 11:31:48  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:31:48  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:31:48  [ main:4 ] - [ ERROR ]  error
+2018-10-22 11:31:48  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:2 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:3 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:3 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:14 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:15 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:16 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:16 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:26 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:26 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:27 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:27 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:41 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:41 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:42 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:42 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:50 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:51 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:51 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:51 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:101 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:101 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:102 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:102 ] - [ FATAL ]  fatal
+2018-10-22 11:38:02  [ main:112 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:38:02  [ main:113 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:38:02  [ main:113 ] - [ ERROR ]  error
+2018-10-22 11:38:02  [ main:114 ] - [ FATAL ]  fatal
+2018-10-22 11:39:25  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:39:25  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:39:25  [ main:4 ] - [ ERROR ]  error
+2018-10-22 11:39:25  [ main:4 ] - [ FATAL ]  fatal
+2018-10-22 11:40:02  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:40:02  [ main:6 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:40:02  [ main:6 ] - [ ERROR ]  error
+2018-10-22 11:40:02  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 11:40:27  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:40:27  [ main:305 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:40:27  [ main:730 ] - [ ERROR ]  error
+2018-10-22 11:40:28  [ main:1233 ] - [ FATAL ]  fatal
+2018-10-22 11:46:28  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:28  [ main:21 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:28  [ main:24 ] - [ ERROR ]  error
+2018-10-22 11:46:28  [ main:25 ] - [ FATAL ]  fatal
+2018-10-22 11:46:28  [ main:56 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:28  [ main:57 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:28  [ main:62 ] - [ ERROR ]  error
+2018-10-22 11:46:28  [ main:67 ] - [ FATAL ]  fatal
+2018-10-22 11:46:28  [ main:114 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:28  [ main:114 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:28  [ main:115 ] - [ ERROR ]  error
+2018-10-22 11:46:28  [ main:115 ] - [ FATAL ]  fatal
+2018-10-22 11:46:28  [ main:140 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:28  [ main:141 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:28  [ main:142 ] - [ ERROR ]  error
+2018-10-22 11:46:28  [ main:142 ] - [ FATAL ]  fatal
+2018-10-22 11:46:28  [ main:163 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:28  [ main:164 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:28  [ main:165 ] - [ ERROR ]  error
+2018-10-22 11:46:28  [ main:166 ] - [ FATAL ]  fatal
+2018-10-22 11:46:29  [ main:203 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:29  [ main:204 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:29  [ main:205 ] - [ ERROR ]  error
+2018-10-22 11:46:29  [ main:205 ] - [ FATAL ]  fatal
+2018-10-22 11:46:29  [ main:221 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:46:29  [ main:222 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:46:29  [ main:222 ] - [ ERROR ]  error
+2018-10-22 11:46:29  [ main:223 ] - [ FATAL ]  fatal
+2018-10-22 11:47:12  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:47:12  [ main:18 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:47:12  [ main:18 ] - [ ERROR ]  error
+2018-10-22 11:47:12  [ main:19 ] - [ FATAL ]  fatal
+2018-10-22 11:49:26  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:49:26  [ main:7 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:49:26  [ main:8 ] - [ ERROR ]  error
+2018-10-22 11:49:26  [ main:9 ] - [ FATAL ]  fatal
+2018-10-22 11:50:07  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:50:07  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:50:07  [ main:6 ] - [ ERROR ]  error
+2018-10-22 11:50:07  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:5 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:33 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:34 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:34 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:35 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:51 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:56 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:56 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:57 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:68 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:69 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:70 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:70 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:83 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:84 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:84 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:85 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:99 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:100 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:100 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:101 ] - [ FATAL ]  fatal
+2018-10-22 11:51:47  [ main:112 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:51:47  [ main:112 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:51:47  [ main:113 ] - [ ERROR ]  error
+2018-10-22 11:51:47  [ main:113 ] - [ FATAL ]  fatal
+2018-10-22 11:52:01  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:52:01  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:52:01  [ main:3 ] - [ ERROR ]  error
+2018-10-22 11:52:01  [ main:4 ] - [ FATAL ]  fatal
+2018-10-22 11:53:06  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:53:06  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:53:06  [ main:4 ] - [ ERROR ]  error
+2018-10-22 11:53:06  [ main:4 ] - [ FATAL ]  fatal
+2018-10-22 11:57:19  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 11:57:19  [ main:6 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 11:57:19  [ main:7 ] - [ ERROR ]  error
+2018-10-22 11:57:19  [ main:8 ] - [ FATAL ]  fatal
+2018-10-22 12:01:39  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:01:39  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:01:39  [ main:4 ] - [ ERROR ]  error
+2018-10-22 12:01:39  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:1 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:5 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:23 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:24 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:24 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:25 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:38 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:39 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:40 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:40 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:50 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:51 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:51 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:51 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:52 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:53 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:53 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:53 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:65 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:66 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:66 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:67 ] - [ FATAL ]  fatal
+2018-10-22 12:02:05  [ main:80 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:02:05  [ main:86 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:02:05  [ main:87 ] - [ ERROR ]  error
+2018-10-22 12:02:05  [ main:87 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:4 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:23 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:24 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:25 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:25 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:39 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:40 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:41 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:42 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:43 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:44 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:44 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:45 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:46 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:57 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:58 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:59 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:59 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:71 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:72 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:72 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:73 ] - [ FATAL ]  fatal
+2018-10-22 12:05:19  [ main:87 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:05:19  [ main:88 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:05:19  [ main:88 ] - [ ERROR ]  error
+2018-10-22 12:05:19  [ main:89 ] - [ FATAL ]  fatal
+2018-10-22 12:07:46  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:46  [ main:6 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:46  [ main:6 ] - [ ERROR ]  error
+2018-10-22 12:07:46  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 12:07:46  [ main:8 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:07:49  [ main:2292 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:49  [ main:2293 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:49  [ main:2293 ] - [ ERROR ]  error
+2018-10-22 12:07:49  [ main:2294 ] - [ FATAL ]  fatal
+2018-10-22 12:07:50  [ main:3124 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:50  [ main:3126 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:50  [ main:3126 ] - [ ERROR ]  error
+2018-10-22 12:07:50  [ main:3127 ] - [ FATAL ]  fatal
+2018-10-22 12:07:54  [ main:7279 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:54  [ main:7280 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:54  [ main:7280 ] - [ ERROR ]  error
+2018-10-22 12:07:54  [ main:7281 ] - [ FATAL ]  fatal
+2018-10-22 12:07:54  [ main:7298 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:54  [ main:7299 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:54  [ main:7299 ] - [ ERROR ]  error
+2018-10-22 12:07:54  [ main:7308 ] - [ FATAL ]  fatal
+2018-10-22 12:07:54  [ main:7317 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:54  [ main:7318 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:54  [ main:7318 ] - [ ERROR ]  error
+2018-10-22 12:07:54  [ main:7318 ] - [ FATAL ]  fatal
+2018-10-22 12:07:54  [ main:7330 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:07:54  [ main:7331 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:07:54  [ main:7331 ] - [ ERROR ]  error
+2018-10-22 12:07:54  [ main:7332 ] - [ FATAL ]  fatal
+2018-10-22 12:11:10  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:11:10  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:11:10  [ main:5 ] - [ ERROR ]  error
+2018-10-22 12:11:10  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:13:29  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:13:29  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:13:29  [ main:6 ] - [ ERROR ]  error
+2018-10-22 12:13:29  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 12:14:31  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:14:31  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:14:31  [ main:4 ] - [ ERROR ]  error
+2018-10-22 12:14:31  [ main:4 ] - [ FATAL ]  fatal
+2018-10-22 12:16:25  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:16:25  [ main:4 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:16:25  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:16:25  [ main:6 ] - [ ERROR ]  error
+2018-10-22 12:16:25  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 12:17:01  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:17:01  [ main:3 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:17:01  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:17:01  [ main:5 ] - [ ERROR ]  error
+2018-10-22 12:17:01  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 12:19:54  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:19:54  [ main:3 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:19:54  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:19:54  [ main:4 ] - [ ERROR ]  error
+2018-10-22 12:19:54  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:20:23  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:20:23  [ main:3 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:20:23  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:20:23  [ main:4 ] - [ ERROR ]  error
+2018-10-22 12:20:23  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:26:51  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:26:51  [ main:3 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:26:51  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:26:51  [ main:5 ] - [ ERROR ]  error
+2018-10-22 12:26:51  [ main:5 ] - [ FATAL ]  fatal
+2018-10-22 12:30:24  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:30:24  [ main:4 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:30:24  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:30:24  [ main:6 ] - [ ERROR ]  error
+2018-10-22 12:30:24  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 12:38:27  [ main:1 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:38:27  [ main:6 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:38:27  [ main:7 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:38:27  [ main:8 ] - [ ERROR ]  error
+2018-10-22 12:38:27  [ main:9 ] - [ FATAL ]  fatal
+2018-10-22 12:40:21  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 12:40:21  [ main:4 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 12:40:21  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 12:40:21  [ main:5 ] - [ ERROR ]  error
+2018-10-22 12:40:21  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 13:38:09  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 13:38:09  [ main:5 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 13:38:09  [ main:6 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 13:38:09  [ main:7 ] - [ ERROR ]  error
+2018-10-22 13:38:09  [ main:8 ] - [ FATAL ]  fatal
+2018-10-22 13:48:36  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 13:48:36  [ main:6 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 13:48:36  [ main:6 ] - [ ERROR ]  error
+2018-10-22 13:48:36  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 14:24:14  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 14:24:14  [ main:5 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:24:14  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:24:14  [ main:6 ] - [ ERROR ]  error
+2018-10-22 14:24:14  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 14:26:29  [ main:2 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:26:29  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:26:29  [ main:6 ] - [ ERROR ]  error
+2018-10-22 14:26:29  [ main:7 ] - [ FATAL ]  fatal
+2018-10-22 14:26:58  [ main:1 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:26:58  [ main:4 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:26:58  [ main:5 ] - [ ERROR ]  error
+2018-10-22 14:26:58  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 14:29:56  [ main:0 ] - [ ERROR ]   logger1 logger1 logger1 logger1  error
+2018-10-22 14:29:56  [ main:7 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:29:56  [ main:9 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:29:56  [ main:10 ] - [ ERROR ]  error
+2018-10-22 14:29:56  [ main:11 ] - [ FATAL ]  fatal
+2018-10-22 14:37:41  [ main:2 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:37:41  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:37:41  [ main:6 ] - [ ERROR ]  error
+2018-10-22 14:37:41  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 14:39:16  [ main:2 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:39:16  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:39:16  [ main:3 ] - [ ERROR ]  error
+2018-10-22 14:39:16  [ main:3 ] - [ FATAL ]  fatal
+2018-10-22 14:39:36  [ main:1 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 14:39:36  [ main:2 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 14:39:36  [ main:2 ] - [ ERROR ]  error
+2018-10-22 14:39:36  [ main:2 ] - [ FATAL ]  fatal
+2018-10-22 15:28:08  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 15:28:08  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 15:28:08  [ main:6 ] - [ ERROR ]  error
+2018-10-22 15:28:08  [ main:6 ] - [ FATAL ]  fatal
+2018-10-22 15:32:16  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-10-22 15:32:16  [ main:5 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-10-22 15:32:16  [ main:5 ] - [ ERROR ]  error
+2018-10-22 15:32:16  [ main:6 ] - [ FATAL ]  fatal

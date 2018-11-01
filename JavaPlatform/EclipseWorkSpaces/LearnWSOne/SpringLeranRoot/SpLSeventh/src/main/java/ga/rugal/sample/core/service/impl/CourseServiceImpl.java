@@ -19,7 +19,15 @@ import org.springframework.stereotype.Service;
 public class CourseServiceImpl implements CourseService
 {
 
-    @Autowired
+    public CourseDAO getCourseDAO() {
+		return courseDAO;
+	}
+
+	public void setCourseDAO(CourseDAO courseDAO) {
+		this.courseDAO = courseDAO;
+	}
+
+	@Autowired
     private CourseDAO courseDAO;
 
     @Override

@@ -22,7 +22,15 @@ public class RegistrationServiceImpl implements RegistrationService
     @Autowired
     private RegistrationDAO registrationDAO;
 
-    @Override
+    public RegistrationDAO getRegistrationDAO() {
+		return registrationDAO;
+	}
+
+	public void setRegistrationDAO(RegistrationDAO registrationDAO) {
+		this.registrationDAO = registrationDAO;
+	}
+
+	@Override
     public RegistrationDAO getDAO()
     {
         return this.registrationDAO;

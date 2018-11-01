@@ -26,7 +26,15 @@ public class StudentController
     @Setter
     private StudentService studentService;
 
-    /**
+    public StudentService getStudentService() {
+		return studentService;
+	}
+
+	public void setStudentService(StudentService studentService) {
+		this.studentService = studentService;
+	}
+
+	/**
      * Persist a student bean into database.
      *
      * @param bean     student bean resembled from request body.

@@ -25,7 +25,7 @@
    <s:a href="%{indexES}" >Spanish</s:a>
    <s:a href="%{indexFR}" >France</s:a>
 
-   <s:form action="empinfo" method="post" namespace="/">
+   <s:form action="eform" method="post" namespace="/">
       <s:textfield name="name" key="global.name" size="20" />
       <s:textfield name="age" key="global.age" size="20" />
       <s:submit name="submit" key="global.submit" />

@@ -22,7 +22,15 @@ public class StudentServiceImpl implements StudentService
     @Autowired
     private StudentDAO studentDAO;
 
-    @Override
+    public StudentDAO getStudentDAO() {
+		return studentDAO;
+	}
+
+	public void setStudentDAO(StudentDAO studentDAO) {
+		this.studentDAO = studentDAO;
+	}
+
+	@Override
     public StudentDAO getDAO()
     {
         return this.studentDAO;

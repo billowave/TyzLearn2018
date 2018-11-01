@@ -8,63 +8,30 @@
 		<artifactId>SpringLeranRoot</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>tyz.learn.springleran</groupId>
+	<groupId>tyz.learn.springleran.5th</groupId>
 	<artifactId>SpLfifth</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1.5-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>SpLfifth Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<struts-version>2.3.8</struts-version>
+		<hibernate-version>5.2.10.Final</hibernate-version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>
 
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>
 
-<!--
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-envers</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>		
-		
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator-annotation-processor</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>
-		
-		
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-agroal</artifactId>
-			<version>${hibernate-version}</version>
-		</dependency>
-		-->
+
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-envers</artifactId> 
+			<version>${hibernate-version}</version> </dependency> <dependency> <groupId>org.hibernate</groupId> 
+			<artifactId>hibernate-validator</artifactId> <version>${hibernate-version}</version> 
+			</dependency> <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator-annotation-processor</artifactId> 
+			<version>${hibernate-version}</version> </dependency> <dependency> <groupId>org.hibernate</groupId> 
+			<artifactId>hibernate-agroal</artifactId> <version>${hibernate-version}</version> 
+			</dependency> -->
 
 
 		<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
@@ -78,69 +45,39 @@
 
 
 
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-core -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-core</artifactId>
-			<version>${struts-version}</version>
-		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-spring-plugin -->
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-spring-plugin</artifactId>
-			<version>${struts-version}</version>
-		</dependency>
-		
+
 		<dependency>
 			<groupId>com.google.code</groupId>
 			<artifactId>struts2-fullhibernatecore-plugin</artifactId>
 			<version>2.2</version>
 		</dependency>
-		
-		
+
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-convention-plugin 
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-convention-plugin</artifactId>
-			<version>2.5.10</version>
-		</dependency>-->
+			<dependency> <groupId>org.apache.struts</groupId> <artifactId>struts2-convention-plugin</artifactId> 
+			<version>2.5.10</version> </dependency> -->
 
-		<!-- Struts 2 Hibernate Plugins 
-		<dependency>
-			<groupId>com.google.code</groupId>
-			<artifactId>struts2-fullhibernatecore-plugin</artifactId>
-			<version>2.2</version>
-		</dependency>-->
+		<!-- Struts 2 Hibernate Plugins <dependency> <groupId>com.google.code</groupId> 
+			<artifactId>struts2-fullhibernatecore-plugin</artifactId> <version>2.2</version> 
+			</dependency> -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-tiles-plugin 
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-tiles-plugin</artifactId>
-			<version>2.5.18</version>
-		</dependency>-->
+			<dependency> <groupId>org.apache.struts</groupId> <artifactId>struts2-tiles-plugin</artifactId> 
+			<version>2.5.18</version> </dependency> -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-json-plugin 
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-json-plugin</artifactId>
-			<version>2.5.18</version>
-		</dependency>-->
+			<dependency> <groupId>org.apache.struts</groupId> <artifactId>struts2-json-plugin</artifactId> 
+			<version>2.5.18</version> </dependency> -->
 
-		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-jfreechart-plugin
-		<dependency>
-			<groupId>org.apache.struts</groupId>
-			<artifactId>struts2-jfreechart-plugin</artifactId>
-			<version>2.5.18</version>
-		</dependency> -->
+		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-jfreechart-plugin 
+			<dependency> <groupId>org.apache.struts</groupId> <artifactId>struts2-jfreechart-plugin</artifactId> 
+			<version>2.5.18</version> </dependency> -->
 
-		<!-- https://mvnrepository.com/artifact/struts/struts-tiles 
-		<dependency>
-			<groupId>struts</groupId>
-			<artifactId>struts-tiles</artifactId>
-			<version>1.2.8</version>
-		</dependency>-->
+		<!-- https://mvnrepository.com/artifact/struts/struts-tiles <dependency> 
+			<groupId>struts</groupId> <artifactId>struts-tiles</artifactId> <version>1.2.8</version> 
+			</dependency> -->
 
 
 
@@ -170,26 +107,6 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.7</version>
 		</dependency>
-
-
-
-
-
-
-		
 	</dependencies>
-	<build>
-		<finalName>SpLfifth</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
-				<configuration>
-					<source>8</source>
-					<target>8</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 </project>

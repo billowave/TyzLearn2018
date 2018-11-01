@@ -9,11 +9,11 @@
     <name>Build history for SSH archetype</name>
     <properties>
         <spring-version>4.2.0.RELEASE</spring-version>
-        <!-- Using utf-8 encoding -->
+        <!-- Using utf-8 encoding 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <skip.surefire.tests>true</skip.surefire.tests>
-        <skip.failsafe.tests>true</skip.failsafe.tests>
+        <skip.failsafe.tests>true</skip.failsafe.tests>-->
         <!-- JDK setting -->
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>

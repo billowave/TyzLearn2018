@@ -26,7 +26,11 @@ public class RegistrationController
     @Setter
     private RegistrationService registrationService;
 
-    /**
+    public void setRegistrationService(RegistrationService registrationService) {
+		this.registrationService = registrationService;
+	}
+
+	/**
      * Persist a registration bean into database.
      *
      * @param bean     registration bean resembled from request body.

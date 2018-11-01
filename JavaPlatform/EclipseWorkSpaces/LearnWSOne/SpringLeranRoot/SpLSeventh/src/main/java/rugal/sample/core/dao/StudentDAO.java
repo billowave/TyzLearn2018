@@ -1,8 +1,9 @@
 package rugal.sample.core.dao;
 
+import ga.rugal.sample.core.entity.Student;
 import ml.rugal.sshcommon.hibernate.Updater;
 import ml.rugal.sshcommon.page.Pagination;
-import rugal.sample.core.entity.Student;
+
 
 /**
  *

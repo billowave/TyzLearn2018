@@ -30,7 +30,9 @@
 	 <include file="/tyz/actions/partof/validate/struts_validate.xml"/>
      <include file="/tyz/actions/partof/local/struts_local.xml"/>
      <include file="/tyz/struts2/addspring/struts_strutspring.xml"/>
-     <include file="/tyz/struts2/shall/struts_plugin.xml"/>
+     
+     <!-- <include file="/tyz/struts2/shall/struts_plugin.xml"/> -->
+     
      <include file="/tyz/struts2/shall/struts_sh.xml"/>
      
      <package name="helloworld" extends="struts-default">
@@ -53,6 +55,12 @@
          method="execute">
          <result name="success">/emails/success.jsp</result>
          <result name="error">/emails/error.jsp</result>
+      </action>
+      
+        <action name="hwregist" 
+         class="test.just.hibernate.webs.HWRegisterAction"
+         method="execute">
+         <result name="success">/hibernateweb/register1.jsp</result>
       </action>
       
    </package>

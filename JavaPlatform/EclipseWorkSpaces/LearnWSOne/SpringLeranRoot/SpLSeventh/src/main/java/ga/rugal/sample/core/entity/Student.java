@@ -57,7 +57,31 @@ public class Student
         return !((this.sid == null && other.sid != null) || (this.sid != null && !this.sid.equals(other.sid)));
     }
 
-    @Override
+    public Integer getSid() {
+		return sid;
+	}
+
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Registration> getRegistrationList() {
+		return registrationList;
+	}
+
+	public void setRegistrationList(List<Registration> registrationList) {
+		this.registrationList = registrationList;
+	}
+
+	@Override
     public String toString()
     {
         return "ga.rugal.student.core.entity.Student[ sid=" + sid + " ]";

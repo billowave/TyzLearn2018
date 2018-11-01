@@ -27,6 +27,8 @@ public class StudentDAO {
       List<Student> students = new ArrayList<Student>();
       try
       {
+    	  Configuration cfg = new Configuration().configure();
+   	   SessionFactory sFactory = cfg.buildSessionFactory();
          students = session.createQuery("from Studentsh").list();
       }
       catch(Exception e)

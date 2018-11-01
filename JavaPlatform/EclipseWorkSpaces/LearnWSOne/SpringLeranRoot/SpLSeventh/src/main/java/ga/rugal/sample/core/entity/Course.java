@@ -64,4 +64,31 @@ public class Course
         return "ga.rugal.student.core.entity.Course[ cid=" + cid + " ]";
     }
 
+	public Integer getCid() {
+		return cid;
+	}
+
+	public void setCid(Integer cid) {
+		this.cid = cid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public List<Registration> getRegistrationList() {
+		return registrationList;
+	}
+
+	public void setRegistrationList(List<Registration> registrationList) {
+		this.registrationList = registrationList;
+	}
+    
+    
+    
+
 }

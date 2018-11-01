@@ -8,6 +8,9 @@
 <title>Success</title>
 </head>
 <body>
+<s:i18n name="global_fr"></s:i18n>
    <s:property value="getText('global.success')" />
+     <s:property value="global.success" />
+     <s:text name="getText('global.success')" ></s:text>
 </body>
 </html>

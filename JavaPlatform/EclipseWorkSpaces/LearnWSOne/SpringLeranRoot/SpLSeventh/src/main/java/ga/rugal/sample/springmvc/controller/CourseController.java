@@ -104,4 +104,10 @@ public class CourseController
         response.setStatus(bean == null ? HttpServletResponse.SC_NOT_FOUND : HttpServletResponse.SC_OK);
         return bean;
     }
+
+	public void setCourseService(CourseService courseService) {
+		this.courseService = courseService;
+	}
+
+	
 }

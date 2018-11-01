@@ -6,118 +6,153 @@
 	<artifactId>SpringLeranRoot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
+
 	<modules>
 		<module>SpLFirst</module>
 		<module>SpLSecond</module>
 		<module>SPLThird</module>
 		<module>SpLFourth</module>
 		<module>SpLfifth</module>
-
-
-		<module>SpLSeventh</module>
 		<module>SpLSixth</module>
+		<module>SpLSeventh</module>
+		<module>SpLEighth</module>
+		<module>SpLNinth</module>
+		<module>SpLTenth</module>
+		<module>SpLEleventh</module>
+		<module>SpLTwelveth</module>
+		<module>SpLThirteenth</module>
 	</modules>
 
 	<properties>
-		<!-- Using utf-8 encoding
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
+		<!-- Using utf-8 encoding <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
+			<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> -->
 		<skip.surefire.tests>true</skip.surefire.tests>
 		<skip.failsafe.tests>true</skip.failsafe.tests>
+
 		<!-- JDK setting -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.testTarget>1.8</maven.compiler.testTarget>
 		<maven.compiler.testSource>1.8</maven.compiler.testSource>
 
-		<spring-version>3.0.5.RELEASE</spring-version>
-		<hibernate-version>3.3.2.GA</hibernate-version>
+		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** start ********** -->
+
+		<!-- <-version>3.0.5.RELEASE</-version> -->
+		<spring-version>5.0.8.RELEASE</spring-version>
+		<hibernate-version>5.2.10.Final</hibernate-version>
 		<struts-version>2.3.8</struts-version>
+		<mybatis-version>3.0.0</mybatis-version>
 		<mysql-version>5.1.34</mysql-version>
-		<tomcat-version>9.0.12</tomcat-version>
-		<tomcat-scope>provided</tomcat-scope>
+		<tomcat-version>7.0.42</tomcat-version>
+		<tomcat-scope>test</tomcat-scope>
+		<junit-version>3.8.1</junit-version>
+
+		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** end ********** -->
+
 	</properties>
 
 
 
 	<dependencies>
 
-		<!-- Tomacat 运行所需的jar包start -->
 
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+
+		<!-- ******************** junit 运行所需的Jar包 ********** start ********** -->
+
 		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-catalina</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit-version}</version>
+			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+		<!-- ******************** junit 运行所需的Jar包 ********** end ********** -->
+
+		<!-- ******************** Struts2 运行所需的Jar包 ********** start ********** -->
+
 		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jdbc</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-websocket -->
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-websocket</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-jasper-el</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-dbcp</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
-		<dependency>
-			<groupId>javax.servlet.jsp.jstl</groupId>
-			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
-			<version>1.2.2</version>
-		</dependency>
-
-
-
-
-		<!-- Spring framework -->
-		<!-- http://mvnrepository.com/artifact/org.springframework/spring-core -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-			<version>${spring-version}</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>${struts-version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>${spring-version}</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>${struts-version}</version>
 		</dependency>
 
+		<!-- ******************** Struts2 运行所需的Jar包 ********** end ********** -->
+
+
+		<!-- ******************** Mybatis 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Mybatis 运行所需的Jar包 ********** end ********** -->
+
+
+
+		<!-- ******************** Hibernate 运行所需的Jar包 ********** start ********** -->
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.3.4.Final</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.5.5-Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
+		<dependency>
+			<groupId>org.hibernate.common</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>5.0.5.Final</version>
+		</dependency>
+
+		<!-- ******************** Hibernate 运行所需的Jar包 ********** end ********** -->
+
+
+
+
+
+		<!-- ********** Spring framework相关Jar包 ******** start ************ -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
 			<version>${spring-version}</version>
 		</dependency>
 
@@ -129,19 +164,45 @@
 
 		<dependency>
 			<groupId>org.springframework</groupId>
-			<artifactId>spring-aop</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-
-
-		<!-- http://mvnrepository.com/artifact/org.springframework/spring-context -->
-		<dependency>
-			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring-version}</version>
 		</dependency>
 
-		<!-- http://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+		<!-- ******************** Spring framework相关Jar包 ********** end ********** -->
+
+
+		<!-- ******************** 数据库连接驱动相关Jar包 ********** start ********** -->
 
 		<!-- MySQL database driver -->
 		<!-- http://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -151,9 +212,6 @@
 			<version>${mysql-version}</version>
 		</dependency>
 
-		<!-- Oracle database driver <dependency> <groupId>com.oracle</groupId> 
-			<artifactId>ojdbc6</artifactId> <version>11.2.0.3</version> </dependency> -->
-
 		<!-- SQLServer database driver (JTDS) -->
 		<!-- http://mvnrepository.com/artifact/net.sourceforge.jtds/jtds -->
 		<dependency>
@@ -161,6 +219,18 @@
 			<artifactId>jtds</artifactId>
 			<version>1.3.1</version>
 		</dependency>
+
+		<!-- Oracle database driver -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+
+		<!-- ******************** 数据库连接驱动相关Jar包 ********** end ********** -->
+
+
+		<!-- ******************** 日志相关Jar包 ********** start ********** -->
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -179,80 +249,89 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
-			<version>1.5.8</version>			
+			<version>1.5.8</version>
 		</dependency>
 
+		<!-- ******************** 日志相关Jar包 ********** end ********** -->
 
+
+
+
+		<!-- ******************** JSP网页相关Jar包 ********** start ********** -->
+
+		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
+		<dependency>
+			<groupId>javax.servlet.jsp.jstl</groupId>
+			<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+
+		<!-- ******************** JSP网页相关Jar包 ********** start ********** -->
+
+
+
+
+		<!-- ******************** Tomacat 运行所需的Jar包 ******************** start 
+			********** -->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-catalina</artifactId>
+			<version>${tomcat-version}</version>
+			<scope>${tomcat-scope}</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jdbc -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jdbc</artifactId>
+			<version>${tomcat-version}</version>
+			<scope>${tomcat-scope}</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-websocket 
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-websocket</artifactId>
+			<version>${tomcat-version}</version>
+			<scope>${tomcat-scope}</scope>
+		</dependency>-->
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper-el</artifactId>
+			<version>${tomcat-version}</version>
+			<scope>${tomcat-scope}</scope>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-dbcp -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-dbcp</artifactId>
+			<version>${tomcat-version}</version>
+			<scope>${tomcat-scope}</scope>
+		</dependency>
+
+		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
 
 
 	</dependencies>
 
-
-	<build>
-		<plugins>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-enforcer-plugin</artifactId>
-				<version>3.0.0-M1</version>
-				<executions>
-					<execution>
-						<id>enforce</id>
-						<configuration>
-							<rules>
-								<dependencyConvergence />
-							</rules>
-						</configuration>
-						<goals>
-							<goal>enforce</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
-
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.5.1</version>
-				<configuration>
-					<source>8</source>
-					<testTarget>8</testTarget>
-				</configuration>
-
-			</plugin>
-		</plugins>
-	</build>
-
-
-	<repositories>
-
-		<repository>
-			<id>aliyunmaven</id>
-			<url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-		</repository>
-
-		<repository>
-			<id>CN</id>
-			<name>OSChina Central</name>
-			<url>http://maven.oschina.net/content/groups/public/</url>
-		</repository>
-
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>maven-net-cn</id>
-			<name>Maven China Mirror</name>
-			<url>http://maven.net.cn/content/groups/public</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</pluginRepository>
-	</pluginRepositories>
+	<!-- <build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-enforcer-plugin</artifactId> <version>3.0.0-M1</version> 
+		<executions> <execution> <id>enforce</id> <configuration> <rules> <dependencyConvergence 
+		/> </rules> </configuration> <goals> <goal>enforce</goal> </goals> </execution> 
+		</executions> </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-compiler-plugin</artifactId> <version>3.5.1</version> <configuration> 
+		<source>8</source> <testTarget>8</testTarget> </configuration> </plugin> 
+		</plugins> </build> <repositories> <repository> <id>aliyunmaven</id> <url>http://maven.aliyun.com/nexus/content/groups/public/</url> 
+		</repository> <repository> <id>CN</id> <name>OSChina Central</name> <url>http://maven.oschina.net/content/groups/public/</url> 
+		</repository> </repositories> <pluginRepositories> <pluginRepository> <id>maven-net-cn</id> 
+		<name>Maven China Mirror</name> <url>http://maven.net.cn/content/groups/public</url> 
+		<releases> <enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> 
+		</snapshots> </pluginRepository> </pluginRepositories> -->
 
 
 
