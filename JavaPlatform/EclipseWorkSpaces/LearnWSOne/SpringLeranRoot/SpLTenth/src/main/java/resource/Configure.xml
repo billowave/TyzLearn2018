@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias alias="User" type="org.SpLTenth.mybatis.User" />
+		<typeAlias alias="Post" type="org.SpLTenth.mybatis.Post" />		
+		<typeAlias alias="UserIDUQ" type="org.SpLTenth.mybatis.UserIDUQ" />
+		<typeAlias alias="MMUser" type="org.SpLTenth.mybatis.MMUser" />
+		<typeAlias alias="MMUserGroup" type="org.SpLTenth.mybatis.MMUserGroup" />
+		<typeAlias alias="MMGroup" type="org.SpLTenth.mybatis.MMGroup" />
+	</typeAliases>
+
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/storyfm" />
+				<property name="username" value="root" />
+				<property name="password" value="123456" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<!-- // power by http://www.yiibai.com 	-->
+		<mapper resource="resource/UserOneToMany.xml" />
+		<mapper resource="resource/UserManyTone.xml" />	
+		<mapper resource="resource/UserIDUQ.xml" />
+		<mapper resource="resource/UserMaper.xml" />
+		<mapper resource="resource/GroupMaper.xml" />
+		<mapper resource="resource/UserGroupMaper.xml" />
+
+	</mappers>
+</configuration>
