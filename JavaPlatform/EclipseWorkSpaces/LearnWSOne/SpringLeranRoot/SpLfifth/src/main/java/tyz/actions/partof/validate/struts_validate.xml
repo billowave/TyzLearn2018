@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <package name="validates" extends="struts-default">
+
+      <action name="empinfo" 
+         class="tyz.actions.partof.validate.EmployeeValid"
+         method="execute">
+         <result name="input">/yanzheng/validate.jsp</result>
+         <result name="success">/yanzheng/success.jsp</result>
+      </action>
+
+   </package>
+
+</struts>

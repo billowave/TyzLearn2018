@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body ng-app="myApp">
+		<hr />
+		<div ng-controller="siteCtrl1">
+
+			<ul>
+				<li ng-repeat="x in names">
+					{{ x.Name + ', ' + x.Country }}
+				</li>
+			</ul>
+
+		</div>
+		<hr />
+		<div ng-controller="siteCtrl2">
+
+			<ul>
+				<li ng-repeat="x in names">
+					{{ x.Name + ', ' + x.Country }}
+				</li>
+			</ul>
+
+		</div>
+
+		<hr />
+
+		<div ng-controller="siteCtrl3">
+
+			<ul>
+				<li ng-repeat="x in names">
+					{{ x.Name + ', ' + x.Country }}
+				</li>
+			</ul>
+
+		</div>
+
+		<hr />
+		<div ng-controller="siteCtrl4">
+
+			<ul>
+				<li ng-repeat="x in names">
+					{{ x.Name + ', ' + x.Country }}
+				</li>
+			</ul>
+
+		</div>
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+
+		<script>
+			var app = angular.module('myApp', []);
+
+			app.controller('siteCtrl1', function($scope, $http) {
+				$http({
+					method: 'GET',
+					url: 'data/data.txt'
+				}).then(function successCallback(response) {
+					$scope.names = response.data.sites;
+				}, function errorCallback(response) {
+					// 请求失败执行代码
+				});
+			});
+
+			app.controller('siteCtrl2', function($scope, $http) {
+				$http({
+					method: 'GET',
+					url: 'http://www.runoob.com/try/angularjs/data/sites.php'
+				}).then(function successCallback(response) {
+					$scope.names = response.data.sites;
+				}, function errorCallback(response) {
+					// 请求失败执行代码
+				});
+			});
+
+			app.controller('siteCtrl3', function($scope, $http) {
+				$http.get('data/data.txt')
+					.then(function(response) {
+						$scope.names = response.data.sites;
+					});
+			});
+
+			//低版本写法
+			app.controller('siteCtrl4', function($scope, $http) {
+				$http.get('data/data.txt')
+					.success(function(response) {
+						$scope.names = response.sites;
+					});
+			});
+			
+		</script>
+		<p>$http 是 AngularJS 中的一个核心服务，用于读取远程服务器的数据</p>
+
+	</body>
+
+</html>

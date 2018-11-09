@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <constant name="struts.custom.i18n.resources" value="global" />
+
+   <package name="locals" extends="struts-default" namespace="/">
+      <action name="eform" 
+         class="tyz.actions.partof.local.EFormAction"
+         method="execute">
+         <result name="input">/localize/index.jsp</result>
+         <result name="success">/localize/success.jsp</result>
+      </action>
+      
+      <action name="locale" 
+         class="tyz.actions.partof.local.LocalAction"
+         method="execute">
+         <result name="success">/localize/index.jsp</result>
+      </action>
+   </package>
+
+</struts>

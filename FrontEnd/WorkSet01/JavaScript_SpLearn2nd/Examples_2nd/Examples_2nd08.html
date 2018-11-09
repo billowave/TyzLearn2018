@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+	</head>
+
+	<body>
+
+		<p>局部变量计数。</p>
+		<button type="button" onclick="myFunction()">计数!</button>
+		<p id="demo">0</p>
+		<script>
+			var gg=(function gfd (init) {
+				var counter = init;
+				return function gfdgdfgf() {
+					return counter += 1;
+				}
+			})(10);
+			
+		(function(){
+				var counter = 0;
+				return function() {
+					return counter += 1;
+				}
+			})();
+			
+	var x = function(a, b) {
+				return a * b;
+			}
+
+
+			function myFunction() {
+				document.getElementById("demo").innerHTML = gg();
+//				document.getElementById("demo").innerHTML =  addtyz();
+			}
+		</script>
+
+	</body>
+
+</html>

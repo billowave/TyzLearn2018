@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+	</head>
+
+	<body>
+
+		<p> toString() 将函数作为一个字符串返回：</p>
+		<p id="demo"></p>
+
+		<hr>
+
+		<p> arguments.length 属性返回函数接收到参数的个数：</p>
+		<p id="demo1"></p>
+		<script>
+			function myFunction(a, b) {
+				return a * b;
+			}
+			document.getElementById("demo").innerHTML = myFunction.toString();
+
+			function myFunction1(a, b) {
+				return arguments.length;
+			}
+			document.getElementById("demo1").innerHTML = myFunction1(4, 3);
+			
+		
+		
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,17 @@
+SpLSecond
+     Maven Java 模块项目
+          JDBC数据库访问
+                                                             【
+                      1、Spring 手动读取配置文件获得bean实例
+                      2、利用JDBC读取Mysql数据库
+                      3、配置文件 XML 包含另外的配置文件 （即配置文件的分割包含整合）  
+                                                              】
+
+
+
+
+
+
+
+
+        		

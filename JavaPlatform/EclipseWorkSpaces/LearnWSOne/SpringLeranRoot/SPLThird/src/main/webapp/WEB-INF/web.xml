@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>SPLThird</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>HCome</servlet-name>
+		<servlet-class>servlets.PartA.Login.HelloCome</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HCome</servlet-name>
+		<url-pattern>/tyz.lg</url-pattern>
+		<url-pattern>/Jspages/tyzs.lg</url-pattern>
+		<url-pattern>/lujin</url-pattern>
+		<url-pattern>/lujin/kk.dl</url-pattern>
+
+
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>s1</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.MyServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>s1</servlet-name>
+		<url-pattern>/ServlerFilters/servlet1</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>f1</filter-name>
+		<filter-class>tyz.servlet.filters.sdefine.MyFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>f1</filter-name>
+		<url-pattern>/ServlerFilters/servlet1</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.Login</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.WelcomeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/ServlerFilters/login</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>WelcomeServlet</servlet-name>
+		<url-pattern>/ServlerFilters/welcome</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>MyConfigServlet</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.MyConfigServlet</servlet-class>
+		<init-param>
+			<param-name>mysql_driver</param-name>
+			<param-value>com.mysql.jdbc.Driver</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>MyConfigServlet</servlet-name>
+		<url-pattern>/ttt/dbconfig</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ConfigServletAll</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.ConfigServletAll</servlet-class>
+		<init-param>
+			<param-name>mssql_driver</param-name>
+			<param-value>com.mssql.jdbc.Driver</param-value>
+		</init-param>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>root</param-value>
+		</init-param>
+		<init-param>
+			<param-name>passwd</param-name>
+			<param-value>123456</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ConfigServletAll</servlet-name>
+		<url-pattern>/dbconfigall</url-pattern>
+	</servlet-mapping>
+
+
+
+	<context-param>
+		<param-name>dname</param-name>
+		<param-value>ttt.com.mysql.jdbc.Driver</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>ContextServ</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.MyContextServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ContextServ</servlet-name>
+		<url-pattern>/mycontext</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ContextServAll</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.MyContextServletAll</servlet-class>
+	</servlet>
+	<context-param>
+		<param-name>dname</param-name>
+		<param-value>com.mysql.jdbc.Driver</param-value>
+	</context-param>
+	<context-param>
+		<param-name>username</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>mypasswd</param-value>
+	</context-param>
+	<servlet-mapping>
+
+		<servlet-name>ContextServAll</servlet-name>
+		<url-pattern>/mycontextall</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>ServletAttr1</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.ServletAttr</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletAttr1</servlet-name>
+		<url-pattern>/servletatt1</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ServletAttr2</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.ServletAttr2</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ServletAttr2</servlet-name>
+		<url-pattern>/servletatt2</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>tyz.servlet.filters.sdefine.AdminServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AdminServlet</servlet-name>
+		<url-pattern>/FilterValidateLogin/login</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+		<filter-name>FilterLogin</filter-name>
+		<filter-class>tyz.servlet.filters.sdefine.FilterLogin</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>FilterLogin</filter-name>
+		<url-pattern>/FilterValidateLogin/login</url-pattern>
+	</filter-mapping>
+
+	<!-- Cooks Learn -->
+
+	<servlet>
+		<servlet-name>FServlet</servlet-name>
+		<servlet-class>tyz.servlet.cooks.sdefine.FirstCooksServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FServlet</servlet-name>
+		<url-pattern>/cooks/servlet1</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>SServlet</servlet-name>
+		<servlet-class>tyz.servlet.cooks.sdefine.SecondCooksServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SServlet</servlet-name>
+		<url-pattern>/cooks/servlet2</url-pattern>
+	</servlet-mapping>
+
+	<!-- Cooks Learn Login with Cookies -->
+
+	<!-- 登录Servlet -->
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>tyz.servlet.cooks.sdefine.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/cooks/login</url-pattern>
+	</servlet-mapping>
+
+	<!-- 注销Servlet -->
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>tyz.servlet.cooks.sdefine.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/cooks/logout</url-pattern>
+	</servlet-mapping>
+
+	<!-- 用户资料Servlet -->
+	<servlet>
+		<servlet-name>ProfileServlet</servlet-name>
+		<servlet-class>tyz.servlet.cooks.sdefine.ProfileServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProfileServlet</servlet-name>
+		<url-pattern>/cooks/profile</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- Cooks Learn Login with HiddenFormField -->	
+
+    <servlet>
+        <servlet-name>formway1</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.FirstFormWayServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>formway1</servlet-name>
+        <url-pattern>/cooks/formwayservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>formway2</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.SecondFormWayServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>formway2</servlet-name>
+        <url-pattern>/cooks/formwayservlet2</url-pattern>
+    </servlet-mapping>
+    
+    
+    	<!-- Cooks Learn Login with UrlRewriting -->	
+
+    <servlet>
+        <servlet-name>UrlReWrite1</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.FirstUrlReWriteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UrlReWrite1</servlet-name>
+        <url-pattern>/cooks/rulservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UrlReWrite2</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.SecondUrlReWriteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UrlReWrite2</servlet-name>
+        <url-pattern>/cooks/rulservlet2</url-pattern>
+    </servlet-mapping>
+
+
+	<!-- Cooks Learn Login with SessionLoginout -->	
+
+
+
+    <servlet>
+        <servlet-name>SessionWayLoginServlet</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.SessionWayLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionWayLoginServlet</servlet-name>
+        <url-pattern>/cooks/SessionWaylogin</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionWayProfileServlet</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.SessionWayProfileServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionWayProfileServlet</servlet-name>
+        <url-pattern>/cooks/SessionWayprofile</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionWayLogoutServlet</servlet-name>
+        <servlet-class>tyz.servlet.cooks.sdefine.SessionWayLogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionWayLogoutServlet</servlet-name>
+        <url-pattern>/cooks/SessionWaylogout</url-pattern>
+    </servlet-mapping>
+	
+		<!-- Cooks Learn Login with HiddenFormField -->	
+			<!-- Cooks Learn Login with HiddenFormField -->	
+				<!-- Cooks Learn Login with HiddenFormField -->	
+					<!-- Cooks Learn Login with HiddenFormField -->	
+
+</web-app>

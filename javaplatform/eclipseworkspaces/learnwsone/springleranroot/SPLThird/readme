@@ -1,0 +1,46 @@
+SPLThird
+     Maven Web 模块项目
+        Servlet 方面的知识 
+             1、过滤器、监听器、事件
+             2、Web要素和关键对象及其作用于范围，如Request、Response、Context、Session等
+             3、Web.xml的配置要素和相关作用
+             4、Web Servlet 的运行原理
+             5、JSP 与  Web 的关系
+             
+                            学习发散
+          1、Web容器的Servlet的“单实例多线程”机制，
+          2、Web项目如何单独开启后程
+          3、线程的并发执行，线程间的数据  
+          4、Java中的定时计划任务线程 执行  Timer()和定时函数启用线程任务 
+          5、Java关键字final类、instanceof、synchronized（lock锁机制）、transient、 
+               
+                 
+  
+        
+                特别鸣谢：
+                           【Servet 教程    -----》   https://www.yiibai.com/servlet"】
+
+
+《============基础知识级别===========》
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        		

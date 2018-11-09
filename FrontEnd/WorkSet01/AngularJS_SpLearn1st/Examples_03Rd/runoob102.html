@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body>
+
+		<div data-ng-app="" data-ng-init="firstName='John';cost=5;count=10">
+
+			<p>姓名为 <span data-ng-bind="firstName"></span></p>
+			<p>cost : <span data-ng-bind="cost"></span></p>
+			<p>count : <span data-ng-bind="count"></span></p>
+			<p>compute1 : <span data-ng-bind="count * cost"></span></p>
+			<p>compute2 : {{count * cost}}</span>
+			</p>
+
+		</div>
+	</body>
+
+</html>

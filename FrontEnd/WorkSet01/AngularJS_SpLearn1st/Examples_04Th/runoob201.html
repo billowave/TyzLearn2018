@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body>
+
+		<div ng-app="myApp" runoob-directive></div>
+
+		<script>
+			var app = angular.module("myApp", []);
+
+			app.directive("runoobDirective", function() {
+				return {
+					template: "<hr>我在指令<B>构造器</B>中创建!<hr>"
+				};
+			});
+		</script>
+
+	</body>
+
+</html>

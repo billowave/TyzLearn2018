@@ -1,0 +1,95 @@
+SpLFifth
+         Maven Web 模块项目
+         Struts2 方面的知识
+         Struts + Spring 集成 【集成暂时有问题没有找出】
+               	注意事项【
+               		1、struts2 的配置文件，默认读取/WEB_INF/classes/struts.xml
+               		2、struts2配置文件一定要包含继承struts-default.xml
+               		3、Eclipse Tomcat调试Web程序会创建缓存文件夹，模拟发布的实时目录
+               		4、tiglib标签饮用，把标签库放到本地目录
+               		5、配置文件的路径是可以配置的，，注意第二点               		
+               		】
+         Struts2 + Hibernate
+         
+               		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        		

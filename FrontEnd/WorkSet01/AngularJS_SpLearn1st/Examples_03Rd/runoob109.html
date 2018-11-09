@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+
+		<script>
+			var app = angular.module('myApp', []);
+
+			app.controller('myCtrl1', function($scope) {
+				$scope.names = ["Google", "Runoob", "Taobao"];
+			});
+
+			app.controller('myCtrl2', function($scope) {
+				$scope.names = ["Google", "Runoob", "Taobao"];
+			});
+
+			app.controller('myCtrl3', function($scope) {
+				$scope.sites = [{
+						site: "Google",
+						url: "http://www.google.com"
+					},
+					{
+						site: "Runoob",
+						url: "http://www.runoob.com"
+					},
+					{
+						site: "Taobao",
+						url: "http://www.taobao.com"
+					}
+				];
+			});
+
+			app.controller('myCtrl4', function($scope) {
+				$scope.sites = {
+					site01: "Google",
+					site02: "Runoob",
+					site03: "Taobao"
+				};
+			});
+
+			app.controller('myCtrl5', function($scope) {
+				$scope.cars = {
+					car01: {
+						brand: "Ford",
+						model: "Mustang",
+						color: "red"
+					},
+					car02: {
+						brand: "Fiat",
+						model: "500",
+						color: "white"
+					},
+					car03: {
+						brand: "Volvo",
+						model: "XC90",
+						color: "black"
+					}
+				}
+			});
+		</script>
+	</head>
+
+	<body ng-app="myApp">
+		<hr />
+		<div ng-controller="myCtrl1">
+
+			<select ng-init="selectedName = names[0]" ng-model="selectedName" ng-options="x for x in names">
+			</select>
+
+		</div>
+		<hr />
+
+		<div ng-app="myApp" ng-controller="myCtrl2">
+
+			<select>
+				<option ng-repeat="x in names">{{x}}</option>
+			</select>
+
+		</div>
+
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl3">
+
+			<p>选择网站:</p>
+
+			<select ng-init="selectedSite = sites[0]" ng-model="selectedSite" ng-options="x.site for x in sites">
+			</select>
+
+			<h1>你选择的是: {{selectedSite.site}}</h1>
+			<p>网址为: {{selectedSite.url}}</p>
+
+		</div>
+
+		<p>该实例演示了使用 ng-options 指令来创建下拉列表，选中的值是一个对象。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl3">
+
+			<p>选择网站:</p>
+
+			<select ng-model="selectedSite1">
+				<option ng-repeat="x in sites" value="{{x.url}}">{{x.site}}</option>
+			</select>
+
+			<h1>你选择的是: {{selectedSite1}}</h1>
+
+		</div>
+
+		<p>该实例演示了使用 ng-repeat 指令来创建下拉列表，选中的值是一个字符串。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl4">
+
+			<p>选择的网站是:</p>
+
+			<select ng-model="selectedSite" ng-options="x for (x, y) in sites">
+			</select>
+
+			<h1>你选择的值是: {{selectedSite}}</h1>
+
+		</div>
+
+		<p>该实例演示了使用对象作为创建下拉列表。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl5">
+
+			<p>选择一辆车:</p>
+
+			<select ng-model="selectedCar" ng-options="x for (x, y) in cars">
+			</select>
+
+			<h1>你选择的是: {{selectedCar.brand}}</h1>
+			<h2>模型: {{selectedCar.model}}</h2>
+			<h3>颜色: {{selectedCar.color}}</h3>
+
+			<p>注意选中的值是一个对象。</p>
+		</div>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl5">
+
+<p>选择一辆车:</p>
+
+<select ng-model="selectedCar" ng-options="y.brand for (x, y) in cars"></select>
+<p>你选择的是: {{selectedCar.brand}}</p>
+<p>型号为: {{selectedCar.model}}</p>
+<p>颜色为: {{selectedCar.color}}</p>
+
+<p>下拉列表中的选项也可以是对象的属性。</p>
+
+</div>
+		<hr />
+
+		<p>该实例演示了 ng-options 指令的使用。</p>
+		<p> 使用 ng-options 指令，选择的值是一个对象</p>
+		<p> ng-repeat 有局限性，选择的值是一个字符串</p>
+		<p></p>
+
+	</body>
+
+</html>
