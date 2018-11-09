@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>tyz.learn.springleran</groupId>
+    <artifactId>SpringLeranRoot</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>SpLfourteenth</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>SpringMVCExamples1st</module>
+    <module>SpringMVCExamples2nd</module>
+    <module>SpringMVCExamples3rd</module>
+    <module>SpringMVCExamples4th</module>
+    <module>SpringMVCExamples5th</module>
+    <module>SpringMVCExamples6th</module>
+    <module>SpringMVCExamples7th</module>
+    <module>SpringMVCExamples8th</module>
+
+
+
+    <module>SpringMVCExamples9th</module>
+  </modules>
+  
+  	
+  
+</project>

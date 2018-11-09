@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl1', function($scope, $location) {
+				$scope.myUrl = $location.absUrl();
+			});
+
+			app.controller('myCtrl2', function($scope, $http) {
+				$http.get("welcome.htm").then(function(response) {
+					$scope.myWelcome = response.data;
+				});
+			});
+
+			app.controller('myCtrl3', function($scope, $timeout) {
+				$scope.myHeader = "Hello World!";
+				$timeout(function() {
+					$scope.myHeader = "How are you today?";
+				}, 2000);
+			});
+
+			app.controller('myCtrl4', function($scope, $interval) {
+				$scope.theTime = new Date().toLocaleTimeString();
+				$interval(function() {
+					$scope.theTime = new Date().toLocaleTimeString();
+				}, 1000);
+			});
+
+			app.controller('myCtrl5', function($scope, hexafy) {
+				$scope.hex = hexafy.myFunc(255);
+			});
+
+			app.service('hexafy', function() {
+				this.myFunc = function(x) {
+					return x.toString(16);
+				}
+			});
+
+			app.filter('myFormat', ['hexafy', function(hexafy) {
+				return function(x) {
+					return hexafy.myFunc(x);
+				};
+			}]);
+		</script>
+	</head>
+
+	<body ng-app="myApp">
+		<hr />
+		<div ng-controller="myCtrl1">
+			<p> 当前页面的url:</p>
+			<h3>{{myUrl}}</h3>
+		</div>
+
+		<p>该实例使用了内建的 $location 服务获取当前页面的 URL。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl2">
+
+			<p>欢迎信息:</p>
+
+			<h1>{{myWelcome}}</h1>
+
+		</div>
+
+		<p> $http 服务向服务器请求信息，返回的值放入变量 "myWelcome" 中。</p>
+
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl3">
+
+			<p>两秒后显示信息:</p>
+
+			<h1>{{myHeader}}</h1>
+
+		</div>
+
+		<p>$timeout 访问在规定的毫秒数后执行指定函数。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl4">
+
+			<p>现在时间是:</p>
+
+			<h1>{{theTime}}</h1>
+
+		</div>
+
+		<p>$interval 访问在指定的周期(以毫秒计)来调用函数或计算表达式。</p>
+		<hr />
+		<div ng-app="myApp" ng-controller="myCtrl5">
+
+			<p>255 的16进制是:</p>
+
+			<h1>{{hex}}</h1>
+
+		</div>
+
+		<p>自定义服务，用于转换16进制数：</p>
+		<hr />
+		<div ng-app="myApp">
+			在过滤器中使用服务:
+
+			<h1>{{225 | myFormat}}</h1>
+
+		</div>
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+
+	</body>
+
+</html>

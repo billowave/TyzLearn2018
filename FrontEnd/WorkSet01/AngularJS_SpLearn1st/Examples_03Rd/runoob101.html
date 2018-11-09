@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body>
+
+		<div ng-app="" ng-init="firstName='John';
+			                    lastName='Dos';
+			                    cost=5;num=10;
+			                    person={firstName:'ttt',lastName:'Dyyoe'};
+			                    points=[1,15,19,2,40]">
+
+			<p>姓名为 <span ng-bind="firstName"></span></p>
+			<p>cost :  <span ng-bind="cost"></span></p>
+			<p> num :  <span ng-bind="num"></span></p>
+			<p> count :  <span ng-bind="num * cost"></span></p>
+			<p> count again:  <span>{{num * cost}}</span></p>
+			<p> fullname :  <span>{{firstName + "   " +lastName}}</span></p>			
+			<p> fullname :  <span ng-bind="  firstName + '   ' + lastName  "></span></p>
+			<p>直接算 {{ 1000 * 100 -1000000 }}</p>
+			<p>姓为 {{ person.lastName }}</p>
+			<p>姓为 <span ng-bind="person.firstName"></span></p>
+			<p>第三个值为 <span ng-bind="points[2]"></span></p>
+			<p>第三个值为       {{    points[2] }}        </span></p>
+			
+		</div>
+		
+	
+
+	</body>
+
+</html>

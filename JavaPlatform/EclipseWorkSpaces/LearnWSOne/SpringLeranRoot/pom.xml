@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tyz.learn.springleran</groupId>
 	<artifactId>SpringLeranRoot</artifactId>
@@ -17,11 +16,14 @@
 		<module>SpLSeventh</module>
 		<module>SpLEighth</module>
 		<module>SpLNinth</module>
-		<module>SpLTenth</module>
-		<module>SpLEleventh</module>
-		<module>SpLTwelveth</module>
-		<module>SpLThirteenth</module>
-	</modules>
+		
+		
+		
+		<module>SpLfourteenth</module>
+		<module>SpLfifteenth</module>
+		
+    
+  </modules>
 
 	<properties>
 		<!-- Using utf-8 encoding <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> 
@@ -35,19 +37,22 @@
 		<maven.compiler.testTarget>1.8</maven.compiler.testTarget>
 		<maven.compiler.testSource>1.8</maven.compiler.testSource>
 
-		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** start ********** -->
+		<!-- ******************** Jar �������汾�������������Ƽ� ********** start ********** -->
 
 		<!-- <-version>3.0.5.RELEASE</-version> -->
 		<spring-version>5.0.8.RELEASE</spring-version>
 		<hibernate-version>5.2.10.Final</hibernate-version>
 		<struts-version>2.3.8</struts-version>
-		<mybatis-version>3.0.0</mybatis-version>
 		<mysql-version>5.1.34</mysql-version>
 		<tomcat-version>7.0.42</tomcat-version>
 		<tomcat-scope>test</tomcat-scope>
 		<junit-version>3.8.1</junit-version>
+		<mybatis-version>3.4.0</mybatis-version>
+		<mybatis-spring-version>1.3.2</mybatis-spring-version>
+		<mybatis-generator-core-version>1.3.3</mybatis-generator-core-version>
+		
 
-		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** end ********** -->
+		<!-- ******************** Jar �������汾�������������Ƽ� ********** end ********** -->
 
 	</properties>
 
@@ -56,16 +61,16 @@
 	<dependencies>
 
 
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** start ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** end ********** -->
 
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** start ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** end ********** -->
 
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** start ********** -->
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** start ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** end ********** -->
 
-		<!-- ******************** junit 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** junit ���������Jar�� ********** start ********** -->
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -74,9 +79,9 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- ******************** junit 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** junit ���������Jar�� ********** end ********** -->
 
-		<!-- ******************** Struts2 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Struts2 ���������Jar�� ********** start ********** -->
 
 		<dependency>
 			<groupId>org.apache.struts</groupId>
@@ -90,15 +95,38 @@
 			<version>${struts-version}</version>
 		</dependency>
 
-		<!-- ******************** Struts2 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Struts2 ���������Jar�� ********** end ********** -->
 
 
-		<!-- ******************** Mybatis 运行所需的Jar包 ********** start ********** -->
-		<!-- ******************** Mybatis 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Mybatis ���������Jar�� ********** start ********** -->
+		
+				<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring-version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
+		<dependency>
+			<groupId>org.mybatis.generator</groupId>
+			<artifactId>mybatis-generator-core</artifactId>
+			<version>${mybatis-generator-core-version}</version>
+		</dependency>
+		
+		
+		<!-- ******************** Mybatis ���������Jar�� ********** end ********** -->
 
 
 
-		<!-- ******************** Hibernate 运行所需的Jar包 ********** start ********** -->
+		<!-- ******************** Hibernate ���������Jar�� ********** start ********** -->
 
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -121,13 +149,6 @@
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-annotations -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-annotations</artifactId>
-			<version>3.5.5-Final</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.hibernate.javax.persistence/hibernate-jpa-2.1-api -->
 		<dependency>
 			<groupId>org.hibernate.javax.persistence</groupId>
@@ -142,13 +163,13 @@
 			<version>5.0.5.Final</version>
 		</dependency>
 
-		<!-- ******************** Hibernate 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Hibernate ���������Jar�� ********** end ********** -->
 
 
 
 
 
-		<!-- ********** Spring framework相关Jar包 ******** start ************ -->
+		<!-- ********** Spring framework���Jar�� ******** start ************ -->
 
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -199,10 +220,23 @@
 			<version>${spring-version}</version>
 		</dependency>
 
-		<!-- ******************** Spring framework相关Jar包 ********** end ********** -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-oxm</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring-version}</version>
+		</dependency>
 
 
-		<!-- ******************** 数据库连接驱动相关Jar包 ********** start ********** -->
+		<!-- ******************** Spring framework���Jar�� ********** end ********** -->
+
+
+		<!-- ******************** ���ݿ������������Jar�� ********** start ********** -->
 
 		<!-- MySQL database driver -->
 		<!-- http://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -227,10 +261,10 @@
 			<version>11.2.0.3</version>
 		</dependency>
 
-		<!-- ******************** 数据库连接驱动相关Jar包 ********** end ********** -->
+		<!-- ******************** ���ݿ������������Jar�� ********** end ********** -->
 
 
-		<!-- ******************** 日志相关Jar包 ********** start ********** -->
+		<!-- ******************** ��־���Jar�� ********** start ********** -->
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
@@ -252,12 +286,12 @@
 			<version>1.5.8</version>
 		</dependency>
 
-		<!-- ******************** 日志相关Jar包 ********** end ********** -->
+		<!-- ******************** ��־���Jar�� ********** end ********** -->
 
 
 
 
-		<!-- ******************** JSP网页相关Jar包 ********** start ********** -->
+		<!-- ******************** JSP��ҳ���Jar�� ********** start ********** -->
 
 		<!-- https://mvnrepository.com/artifact/javax.servlet.jsp.jstl/javax.servlet.jsp.jstl-api -->
 		<dependency>
@@ -266,12 +300,19 @@
 			<version>1.2.2</version>
 		</dependency>
 
-		<!-- ******************** JSP网页相关Jar包 ********** start ********** -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+
+		<!-- ******************** JSP��ҳ���Jar�� ********** start ********** -->
 
 
 
 
-		<!-- ******************** Tomacat 运行所需的Jar包 ******************** start 
+		<!-- ******************** Tomacat ���������Jar�� ******************** start 
 			********** -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
@@ -291,12 +332,8 @@
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-websocket 
-		<dependency>
-			<groupId>org.apache.tomcat</groupId>
-			<artifactId>tomcat-websocket</artifactId>
-			<version>${tomcat-version}</version>
-			<scope>${tomcat-scope}</scope>
-		</dependency>-->
+			<dependency> <groupId>org.apache.tomcat</groupId> <artifactId>tomcat-websocket</artifactId> 
+			<version>${tomcat-version}</version> <scope>${tomcat-scope}</scope> </dependency> -->
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper-el -->
 		<dependency>
@@ -314,7 +351,7 @@
 			<scope>${tomcat-scope}</scope>
 		</dependency>
 
-		<!-- ******************** Tomacat 运行所需的Jar包 ********** end ********** -->
+		<!-- ******************** Tomacat ���������Jar�� ********** end ********** -->
 
 
 	</dependencies>

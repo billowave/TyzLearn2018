@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body>
+
+		<div ng-app="" ng-init="mySwitch=true">
+			<p>
+				<button ng-disabled="mySwitch">点我!</button>
+			</p>
+			<p>
+				<input type="checkbox" ng-model="mySwitch" />按钮
+			</p>
+			<p>
+				{{ mySwitch }}
+			</p>
+
+			<p ng-show="true">我是可见的。</p>
+
+			<p ng-show="false">我是不可见的。</p>
+
+			<div ng-app="" ng-init="hour=100">
+
+				<p ng-show="hour > 12">我是可见的。</p>
+
+			</div>
+
+			<div ng-app="">
+
+				<p ng-hide="true">我是不可见的。</p>
+
+				<p ng-hide="false">我是可见的。</p>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -2,3 +2,11 @@
 2018-10-25 16:43:04  [ main:37 ] - [ INFO ]  INFO: Log4j 输出测试成功
 2018-10-25 16:43:04  [ main:38 ] - [ ERROR ]  error
 2018-10-25 16:43:04  [ main:38 ] - [ FATAL ]  fatal
+2018-11-02 12:01:30  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-11-02 12:01:30  [ main:24 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-11-02 12:01:30  [ main:25 ] - [ ERROR ]  error
+2018-11-02 12:01:30  [ main:25 ] - [ FATAL ]  fatal
+2018-11-02 12:07:32  [ main:0 ] - [ DEBUG ]  DEBUG:测试输出2
+2018-11-02 12:07:32  [ main:3 ] - [ INFO ]  INFO: Log4j 输出测试成功
+2018-11-02 12:07:32  [ main:4 ] - [ ERROR ]  error
+2018-11-02 12:07:32  [ main:4 ] - [ FATAL ]  fatal

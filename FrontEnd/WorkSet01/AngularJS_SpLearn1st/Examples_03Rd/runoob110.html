@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+		<style>
+			table,
+			th,
+			td {
+				border: 1px solid grey;
+				border-collapse: collapse;
+				padding: 5px;
+			}
+			
+			table tr:nth-child(odd) {
+				background-color: #f1f1f1;
+			}
+			
+			table tr:nth-child(even) {
+				background-color: #ffffff;
+			}
+		</style>
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('customersCtrl1', function($scope, $http) {
+				$http.get("data/datarecord.txt")
+					.then(function(result) {
+						$scope.names = result.data.records;
+					});
+			});
+
+			app.controller('customersCtrl2', function($scope, $http) {
+				$http.get("/try/angularjs/data/Customers_JSON.php")
+					.then(function(result) {
+						$scope.names = result.data.records;
+					});
+			});
+		</script>
+	</head>
+
+	<body ng-app="myApp">
+
+		<hr />
+		<div ng-controller="customersCtrl1">
+
+			<table>
+				<tr ng-repeat="x in names">
+					<td>{{ x.Name }}</td>
+					<td>{{ x.Country }}</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<hr />
+
+		<div ng-controller="customersCtrl1">
+			<table>
+				<tr ng-repeat="x in names | orderBy : 'Country'">
+					<td ng-if="$odd" style="background-color:#00f1f1">{{ $index + 1 }}</td>
+					<td ng-if="$even">{{ $index + 1 }}</td>
+					<td ng-if="$odd" style="background-color:#00f1f1">{{ x.Name | lowercase}}</td>
+					<td ng-if="$even">{{ x.Name | lowercase}}</td>
+					<td ng-if="$odd" style="background-color:#00f1f1">{{ x.Country | uppercase}}</td>
+					<td ng-if="$even">{{ x.Country | uppercase}}</td>
+				</tr>
+			</table>
+		</div>
+		<hr />
+		<hr />
+		<hr />
+		<hr />
+
+	</body>
+
+</html>

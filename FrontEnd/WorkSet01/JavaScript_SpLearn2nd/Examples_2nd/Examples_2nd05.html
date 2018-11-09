@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<body>
+
+		<p id="demo"></p>
+		<hr>
+		<p id="demo1"></p>
+
+		<script>
+			var myObject;
+
+			function myFunction(a, b) {
+				return a * b;
+			}
+			myObject = myFunction.call(myObject, 10, 2); // 返回 20
+			document.getElementById("demo").innerHTML = myObject;
+
+			var myObject1, myArray;
+
+			function myFunction1(a, b) {
+				return a * b;
+			}
+			myArray = [22, 2]
+			myObject1 = myFunction1.apply(myObject1, myArray); // 返回 20
+			document.getElementById("demo1").innerHTML = myObject1;
+			
+			
+			
+		</script>
+
+	</body>
+
+</html>

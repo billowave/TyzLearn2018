@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('personCtrl', function($scope) {
+			$scope.firstName = "John";
+			$scope.lastName = "Doe";
+			$scope.fullName = function() {
+				return $scope.firstName + " " + $scope.lastName;
+			}
+		});
+
+		app.controller('costCtrl', function($scope) {
+			$scope.quantity = 1;
+			$scope.price = 9.99;
+		});
+
+		app.controller('namesCtrl', function($scope) {
+			$scope.names = [{
+					name: 'Jani',
+					country: 'Norway'
+				},
+				{
+					name: 'Hege',
+					country: 'Sweden'
+				},
+				{
+					name: 'Kai',
+					country: 'Denmark'
+				}
+			];
+		});
+
+		app.controller('myCtrl', function($scope) {
+			$scope.msg = "Runoob";
+		});
+
+		app.filter('reverse', function() { //可以注入依赖
+			return function(text) {
+				return text.split("").reverse().join("");
+			}
+		});
+	</script>
+
+	<body ng-app="myApp">
+
+		<div ng-controller="personCtrl">
+
+			<p>姓名为 {{ lastName | lowercase }}</p>
+
+		</div>
+
+		<hr />
+
+		<div ng-controller="personCtrl">
+
+			<p>姓名为 {{ lastName | uppercase }}</p>
+
+		</div>
+
+		<hr />
+
+		<div ng-app="myApp" ng-controller="costCtrl">
+
+			<input type="number" ng-model="quantity">
+			<input type="number" ng-model="price">
+
+			<p>总价 = {{ (quantity * price) | currency }}</p>
+
+		</div>
+
+		<hr />
+		<div ng-app="myApp" ng-controller="namesCtrl">
+
+			<ul>
+				<li ng-repeat="x in names | orderBy:'country'">
+					{{ x.name + ', ' + x.country }}
+				</li>
+			</ul>
+
+		</div>
+		<hr />
+		<div ng-app="myApp" ng-controller="namesCtrl">
+
+			<p><input type="text" ng-model="test"></p>
+
+			<ul>
+				<li ng-repeat="x in names | filter:test | orderBy:'country'">
+					{{ (x.name | uppercase) + ', ' + x.country }}
+				</li>
+			</ul>
+
+		</div>
+		<hr />
+
+		<div ng-app="myApp" ng-controller="myCtrl">
+
+			姓名: {{ msg | reverse }}
+
+		</div>
+
+		<hr />
+		<p>过滤器可以使用一个管道字符（|）添加到表达式和指令中。</p>
+		<p>currency 格式化数字为货币格式。 </p>
+		<p>filter 从数组项中选择一个子集。</p>
+		<p>lowercase 格式化字符串为小写。</p>
+		<p>orderBy 根据某个表达式排列数组。 </p>
+		<p>uppercase 格式化字符串为大写。</p>
+		<p>自定义过滤器 : reverse，将字符串反转!</p>
+		<hr />
+
+	</body>
+
+</html>

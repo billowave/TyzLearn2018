@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<script src="../angular/lib/js/angular.min.js"></script>
+	</head>
+
+	<body ng-app="myApp">
+
+		<div ng-controller="myCtrl1">
+			<p>{{ x1 }}</p>
+			<p>{{ x2 }}</p>
+
+		</div>
+
+		<hr>
+		<div ng-app="myApp" ng-controller="myCtrl2">
+			<p>{{ x1 }}</p>
+			<p>{{ x2 }}</p>
+		</div>
+
+		<hr>
+		<div ng-app="myApp" ng-controller="myCtrl3">
+			<p>{{ x1 }}</p>
+			<p>{{ x2 }}</p>
+		</div>
+		<hr>
+		<div ng-app="myApp" ng-controller="myCtrl4">
+			<p>{{ x1 }}</p>
+			<p>{{ x2 }}</p>
+			<p>{{ x3 }}</p>
+		</div>
+
+		<script>
+			var app = angular.module('myApp', []);
+			app.controller('myCtrl1', function($scope) {
+				$scope.x1 = "RUNOOB";
+				$scope.x2 = angular.$$lowercase($scope.x1);
+			});
+
+			app.controller('myCtrl2', function($scope) {
+				$scope.x1 = "runoob";
+				$scope.x2 = angular.$$uppercase($scope.x1);
+			});
+
+			app.controller('myCtrl3', function($scope) {
+				$scope.x1 = "RUNOOB";
+				$scope.x2 = angular.isString($scope.x1);
+			});
+
+			app.controller('myCtrl4', function($scope) {
+				$scope.x1 = "RUNOOB";
+				$scope.x2 = angular.isNumber($scope.x1);
+				$scope.x3 = angular.$$lowercase("lowP");
+			});
+			
+			
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜鸟教程(runoob.com)</title>
+	</head>
+
+	<body>
+
+		<p>查找最大的数。</p>
+		<p id="demo"></p>
+		<script>
+			x = findMax(1, 123, 500, 115, 44, 88);
+
+			function findMax() {
+				var i, max = arguments[0];
+
+				if(arguments.length < 2) return max;
+
+				for(i = 0; i < arguments.length; i++) {
+					if(arguments[i] > max) {
+						max = arguments[i];
+					}
+				}
+				return max;
+			}
+			document.getElementById("demo").innerHTML = x;
+
+			y = sumAll(1, 123, 500, 115, 44, 88);
+
+			function sumAll() {
+				var i, sum = 0;
+				for(i = 0; i < arguments.length; i++) {
+					sum += arguments[i];
+				}
+				return sum;
+			}
+
+			document.getElementById("demo").innerHTML = document.getElementById("demo").innerHTML + "<br>" + y;
+		</script>
+
+	</body>
+
+</html>
