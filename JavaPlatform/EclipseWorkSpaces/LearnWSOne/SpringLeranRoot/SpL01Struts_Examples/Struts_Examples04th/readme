@@ -1,0 +1,86 @@
+SpringLeranRoot
+
+SpL01Struts_Examples
+
+Struts_Examples02nd
+
+    1、struts2 的默认配置文件  struts.xml 放置在  src 目录下面，
+                      其在发布后的位置即在 /WEB-INF/classes 目录下
+    2、
+    3、
+    4、
+    5、Struts2 + Hibernate + Spring实例
+
+
+
+  【报错信息】
+    cvc-elt.1: 找不到元素 'beans' 的声明。
+    
+    是因为spring-bean的xld文件版本不对 ，或配置文件的头部信息有错误             		
+               		
+               		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        		

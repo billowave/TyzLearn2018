@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>tyz.learn.springleran</groupId>
+		<artifactId>SpL06Spring_Examples</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>SpLSecond</artifactId>
+	<name>SpLSecond</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** start ********** -->
+
+		<!-- <-version>3.0.5.RELEASE</-version> -->
+		<spring-version>4.2.0.RELEASE</spring-version>
+
+		<!-- ******************** Jar 包依赖版本控制属性名名称集 ********** end ********** -->
+	</properties>
+
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
+
+
+	</dependencies>
+
+
+
+
+</project>
